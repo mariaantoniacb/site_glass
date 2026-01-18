@@ -19,7 +19,17 @@
 
 body {
     background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
 }
-img > header {
-   
+
+header > p {
+    background-color: var(--cor3);
+    color: #f99c46;
+    text-align: center;
+    padding: 15px;
+}
+
+header > img {
+    height: auto;
+    width: 300px;
 }
