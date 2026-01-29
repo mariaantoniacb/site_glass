@@ -28,55 +28,7 @@ body {
     background-color: var(--cor0);
     font-family: "poppins", sans-serif;
 }
-main {
-    min-width: 300px;
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 400px;
-    padding: 20px;
-    
-}
-a.voltar-moda {
-    color: #000000;
-    margin: 30px;
-}
- 
-.titulo-materia {
-    font-weight: 600;
-    font-size: 2em;
-    margin: 30px 0px 0px -10px;
-    letter-spacing: 3px;
-}
 
-.subtitulo-materia {
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-
-article > h6 {
-    margin: 30px;
- }
-.paragrafo {
-    margin: 20px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1.02em;
-    line-height: 2.1em;
-}
-
-.imagens {
-    width: 100%;
-    
-}
-
-.div-intera {
-    margin: 100px 0px 10px 50px;
-}
-p.interacao {
-    font-size: larger;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
 
 header > p {
     background-color: var(--cor3);
@@ -135,6 +87,102 @@ header > div > img {
   padding: 6px 10px;
 }
 
+main {
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 200px;
+    padding: 20px;
+    
+}
+
+article{
+    margin-bottom: 200px;
+}
+ 
+.titulo-materia {
+    font-weight: 600;
+    font-size: 2em;
+    margin: 30px 0px 0px -10px;
+    letter-spacing: 3px;
+}
+
+.subtitulo-materia {
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+article > h6 {
+    margin: 30px;
+ }
+.paragrafo {
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.02em;
+    line-height: 2.1em;
+}
+
+.img-influen{
+    width: 100%;
+}
+
+.img-influen img {
+    width: 100%;
+    height: auto;
+}
+
+#interacao-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.div-intera {
+    margin: 30px 50px 10px 50px;
+    
+}
+p.interacao {
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+#main-redes-sociais {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.main-link{
+   display: flex;
+}
+
+
+#main-redes-sociais .main-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-redes-sociais .main-link i {
+    font-size: 1.45rem;
+}
+
+
+
+
+
+
+
+
 footer {
     width: 100%;
     color: var(--cor2-2);
@@ -153,6 +201,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    color: var(--cor2-2);
 }
 #input-group {
     display: flex;
@@ -236,7 +285,7 @@ footer {
 @media screen and (max-width:440px) {
     #footer-content{
         grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 10rem;
+        padding: 3rem 1.5rem;
         justify-content: right;
     }
 }
