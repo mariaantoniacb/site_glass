@@ -5,6 +5,38 @@
 
 
 
+
+.linha{
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+
+}
+   
+
+.overlay.orange, .overlay.gray{
+    font-size: 0.7rem;
+    padding: 0px;
+    
+}
+
+.overlay p{
+    font-style: italic;
+    font-size: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 fieldset legend {
     max-width: 600px;
     letter-spacing: 0.1rem;
@@ -25,7 +57,7 @@ fieldset legend {
 }
 
 .card-lanc img{
-    min-width: 160px;
+    min-width: 140px;
     width: 100%;
     height: auto;
     display: block;
@@ -33,5 +65,20 @@ fieldset legend {
 }
 
 .titulo-card h4 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+}
+
+
+
+.desi-card img {
+    min-width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+p.media-username{
+    font-size: 1rem;
 }

@@ -138,6 +138,10 @@ main.container {
     padding: 10px;
 }
 
+.sombra-texto {
+    text-shadow: 2px 2px 12px #2b2b2bb8;
+}
+
 .overlay.gray > .linha{
     border-top: 1px solid var(--cor1);
 }
@@ -149,6 +153,12 @@ main.container {
     font-size: 0.8rem;
     width: 100%;
     padding: 10px;
+    height: clamp(70px, 10vw,  110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
 }
 
 .overlay.orange { 
@@ -163,6 +173,7 @@ main.container {
 
 .overlay p{
     font-style: italic;
+
 }
 
 .galeria{
@@ -267,8 +278,82 @@ section.lancamentos{
     margin: 8px 0px 10px 0px;
 }
 
-.lancamentos> a > img{
+
+
+section.designers {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 1rem;
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+} 
+
+.button-scroll {
+    position: absolute;
+    top: 30%;
+    background: none;
+    color: var(--cor3-1);
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
     
+}
+
+.button-scroll.left {
+    left: -5px;
+}
+
+.button-scroll.right {
+    right: -5px;
+}
+
+.designers-cards {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.designers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.desi-card{
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.desi-card img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+img.img-desi-card{
+    box-shadow: 0px 0.8px 10px var(--cor3-1);
+}
+
+.media-username {
+    
+    box-shadow: 0.5px 0.5px 10px var(--cor3-1);
+    background-color: var(--cor2-2);
+    border-radius: 25px;
+    width: 250px;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -276,6 +361,7 @@ section.lancamentos{
 footer {
     width: 100%;
     color: var(--cor2-2);
+    margin: 100px 0px 0px 0px;
     
 }
 
@@ -320,6 +406,7 @@ footer {
 }
 
 #footer-contatos p {
+    margin-top: 1.2rem;
     margin-bottom: 0.75rem;
     color: var(--cor0);
     
