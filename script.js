@@ -30,4 +30,4 @@ function infiniteScroll() {
     requestAnimationFrame(infiniteScroll);
 }
 
-infiniteScroll();
+infiniteScroll(); 
