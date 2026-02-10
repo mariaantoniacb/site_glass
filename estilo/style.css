@@ -24,10 +24,11 @@
 
 }
 
-body {
+body, html {
     background-color: var(--cor0);
     font-family: "poppins", sans-serif;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 
