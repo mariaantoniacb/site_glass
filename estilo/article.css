@@ -39,14 +39,34 @@ article > h6 {
     line-height: 2.1em;
 }
 
-.img-influen{
+.imagem-unica{
     width: 100%;
 }
 
-.img-influen img {
+.imagem-unica img{
     width: 100%;
     height: auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
 }
+
+.img-group {
+    width: 100%;
+    display: grid;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+    
+} 
+.img-group-01 {
+    margin-bottom: 23.4%;
+}
+
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+   
+}
+
+
 
 #interacao-div{
     display: flex;
@@ -55,6 +75,7 @@ article > h6 {
     flex-wrap: wrap;
     
 }
+
 
 .div-intera {
     margin: 30px 50px 10px 50px;
