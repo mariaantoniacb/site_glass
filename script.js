@@ -1,7 +1,7 @@
 const container = document.getElementById("designersCards");
 const btnLeft = document.querySelector(".button-scroll.left");
 const btnRight = document.querySelector(".button-scroll.right");
- 
+
 
 
 btnRight.addEventListener("click", () => {
@@ -30,4 +30,4 @@ function infiniteScroll() {
     requestAnimationFrame(infiniteScroll);
 }
 
-infiniteScroll(); 
+infiniteScroll();

@@ -24,11 +24,10 @@
 
 }
 
-body, html {
+body {
     background-color: var(--cor0);
     font-family: "poppins", sans-serif;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 }
 
 
@@ -304,6 +303,17 @@ section.designers {
     
 }
 
+.button-scroll.left:hover {
+    border-radius: 50%;
+    background: linear-gradient(to right, #7a7e8a, #7a7e86b2, #7a7e8653, #7a7e8600);  
+}
+
+.button-scroll.right:hover {
+    border-radius: 50%;
+    background: linear-gradient(to left, #7a7e8aec, #7a7e8692, #7a7e863e, #7a7e860c);  
+}
+
+
 .button-scroll.left {
     left: -5px;
 }
@@ -316,7 +326,7 @@ section.designers {
     display: flex;
     gap: 50px;
     overflow-x: auto;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     padding-bottom: 20px;
 }
 
@@ -327,6 +337,11 @@ section.designers {
 .desi-card{
     flex-shrink: 0;
     align-items: center;
+    cursor: grab;
+}
+
+.desi-card:active {
+    cursor: grabbing;
 }
 
 .desi-card img {
