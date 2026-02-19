@@ -11,12 +11,22 @@
     --cor3-1: #7a7e86b2;
 }
 
-.album {
+.midia {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px; 
     align-items: center;
     margin: 10px 0px 100px 0px;
+}
+
+.bloco-lancamento{
+    margin-top: 20px;
+}
+
+a.link-bloco-lancamento{
+    color: black;
+    cursor: pointer ;
+    letter-spacing: 0.3rem;
 }
 
 .img-capa {
@@ -28,7 +38,7 @@
 
 
 
-.info-album > p {
+.info-midia > p {
     
     margin: 10px 0px;
     text-align: justify;
@@ -36,7 +46,7 @@
     line-height: 2.1em;
 }
 
-.nome-album{
+.nome-midia{
     font-size: large;
     font-weight: 600;
 }
