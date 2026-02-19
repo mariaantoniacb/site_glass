@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor0: #dcdcde;
+    --cor1: #f99c46;
+    --cor1-1: #f99c46b2;
+    --cor2: #ffaf59;
+    --cor2-2: #ffaf59d3;
+    --cor3: #7a7e8a;
+    --cor3-1: #7a7e86b2;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px; 
+    align-items: center;
+    margin: 10px 0px 100px 0px;
+}
+
+.img-capa {
+    border: 1px solid var(--cor1);
+    padding: 10px;
+    max-width: 250px;
+    width: 100%;
+}
+
+
+
+.info-album > p {
+    
+    margin: 10px 0px;
+    text-align: justify;
+    font-size: 1.02em;
+    line-height: 2.1em;
+}
+
+.nome-album{
+    font-size: large;
+    font-weight: 600;
+}
+strong {
+    font-weight: 600;
+}
+
+
+.link-album {
+    text-decoration: none;
+    color: black;
+}
+
+.link-album:hover {
+    color: var(--cor1);
+}

@@ -1,18 +1,16 @@
 @charset "UTF-8";
 
 
-
+/*destaque pagina inicial*/
 .linha{
     margin: 0px 10px 0px 10px;
     padding: 0px 10px 0px 10px;
 
 }
-   
 
 .overlay.orange, .overlay.gray{
     font-size: 0.7rem;
-    padding: 0px;
-    
+    padding: 0px; 
 }
 
 .overlay p{
@@ -22,7 +20,7 @@
 
 
 
-
+/*lançamentos*/
 
 
 fieldset legend {
@@ -56,7 +54,7 @@ fieldset legend {
     font-size: 0.7rem;
 }
 
-
+/*Designers*/
 
 .desi-card img {
     min-width: 120px;
@@ -70,3 +68,32 @@ fieldset legend {
 p.media-username{
     font-size: 1rem;
 }
+
+
+/*materia lançamentos */
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+}
+
+.capa {
+    display: flex;
+    justify-content: center;
+}
+.img-capa{
+    border: 1px solid var(--cor1);
+    padding: 10px;
+    min-width: 220px;
+    width: 100%;
+
+}
+.info-album > p {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
