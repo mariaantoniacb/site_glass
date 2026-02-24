@@ -58,7 +58,7 @@ header > div > a > img {
 }
 
 .menu-nav {
-    display: flex;
+    display: flex; 
     flex-direction: column; 
     align-items: center;
     white-space: nowrap;
