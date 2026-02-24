@@ -79,10 +79,6 @@ p.media-username{
 
 }
 
-.capa {
-    display: flex;
-    justify-content: center;
-}
 .img-capa{
     border: 1px solid var(--cor1);
     padding: 10px;
