@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    }
 
 /*destaque pagina inicial*/
 .linha{
@@ -93,5 +100,21 @@ p.media-username{
     margin: 10px 0;
     font-size: 1em;
     line-height: 2em;
+}
+
+/*fale conosco*/
+
+
+
+input, textarea {
+    width: 350px;
+    min-width: 300px;
+}
+
+button {
+    width: 350px;
+    height: 40px;
+    background-color: var(--cor1);
+    color: white;
 }
 

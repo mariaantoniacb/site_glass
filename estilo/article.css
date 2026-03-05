@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    }
+
+:root {
+    --cor0: #dcdcde;
+    --cor1: #f99c46;
+    --cor1-1: #f99c46b2;
+    --cor2: #ffaf59;
+    --cor2-2: #ffaf59d3;
+    --cor3: #7a7e8a;
+    --cor3-1: #7a7e86b2;
+}
+
 /*materias*/
 
 
@@ -100,8 +118,49 @@ ul > p.paragrafo{
     padding-left: 40px;
 }
 
+/* fale conosco */
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--cor3);
 
+    
+}
+
+input, textarea {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    margin: 20px 0px;
+    height: 50px;
+    padding: 5px;
+
+    
+}
+textarea {
+    height: 200px;
+}
+
+button {
+    width: 500px;
+    height: 50px;
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
 
 /*interação*/
 

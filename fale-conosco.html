@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="imagens - galeria/favicon.ico">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/article.css">
+    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (max-width:820px)">
 </head>
 <body>
     <header>
@@ -32,13 +33,32 @@
     </header>
     <main class="materia">
 
-        <article>
-            <h1 class="titulo-infos">Fale Conosco</h1>
+        <h1 class="titulo-infos">Fale Conosco</h1>
+
+        <form action="" method="post">
+            
+
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" max="20" placeholder="digite seu nome e sobrenome" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="digite seu e-mail">
+            </p>
+
+            <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" ></textarea>
+        </p>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+
            
 
             
 
-        </article>
+       
 
         <div id="interacao-div">
             <div class="div-intera">
@@ -83,7 +103,7 @@
 
             <ul class="footer-lista">
                 <li>
-                    <a href="#" class="footer-link">Fale conosco</a>
+                    <a href="fale-conosco.html" class="footer-link">Fale conosco</a>
                 </li>
                 <li>
                     <a href="#" class="footer-link">Colabore</a>
