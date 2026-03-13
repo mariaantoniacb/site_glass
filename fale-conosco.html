@@ -35,23 +35,23 @@
 
         <h1 class="titulo-infos">Fale Conosco</h1>
 
-        <form action="" method="post">
+        <form id="form-fale-conosco" action="" method="post">
             
 
             <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" minlength="5" max="20" placeholder="digite seu nome e sobrenome" required>
+                <input class="fale-conosco" type="text" name="nome" id="inome" minlength="5" max="20" placeholder="digite seu nome e sobrenome" required>
             </p>
             <p>
                 <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="digite seu e-mail">
+                <input class="fale-conosco" type="email" name="email" id="iemail" autocomplete="email" placeholder="digite seu e-mail">
             </p>
 
             <p>
             <label for="imsg">Mensagem: </label> <br>
             <textarea name="msg" id="imsg" cols="30" rows="10" ></textarea>
         </p>
-            <button type="submit">Enviar mensagem</button>
+            <button id="botao-enviar" type="submit">Enviar mensagem</button>
         </form>
 
            
@@ -66,7 +66,7 @@
                 <p class="interacao">Manda para que <br> você acha que vai curtir</p>
             </div>
             <div id="main-redes-sociais">
-                 <a href="#" class="main-link" id="instagram">
+                 <a href="#" class="main-link" >
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                     <a href="#" class="main-link" id="whatsapp">

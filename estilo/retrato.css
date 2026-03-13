@@ -106,15 +106,43 @@ p.media-username{
 
 
 
-input, textarea {
+.fale-conosco, textarea {
     width: 350px;
     min-width: 300px;
 }
 
-button {
+button#botao-enviar {
     width: 350px;
     height: 40px;
     background-color: var(--cor1);
     color: white;
 }
+
+/* quem somos */
+
+div.equipe-site {
+   
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+div.apresentacao > p{
+    font-size: 1.32rem;
+    margin: 15px 0 15 px 0;
+
+}
+
+.equipe-revista {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+   
+}
+
 

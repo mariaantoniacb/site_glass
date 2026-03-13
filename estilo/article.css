@@ -120,7 +120,7 @@ ul > p.paragrafo{
 
 /* fale conosco */
 
-form{
+form#form-fale-conosco{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,14 +130,14 @@ form{
     
 }
 
-input, textarea {
+.fale-conosco, textarea {
     width: 500px;
     display: block;
     margin: 0 auto;
     border: none;
     margin: 20px 0px;
     height: 50px;
-    padding: 5px;
+    padding: 5px; 
 
     
 }
@@ -145,7 +145,7 @@ textarea {
     height: 200px;
 }
 
-button {
+button#botao-enviar {
     width: 500px;
     height: 50px;
     background-color: var(--cor2);
@@ -158,10 +158,92 @@ button {
     margin-bottom: 200px;
 }
 
-button:hover {
+button#botao-enviar:hover {
     opacity: 0.7;
 }
 
+/* Quem Somos */
+
+h2.subtitulo {
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin: 50px 0 50px 0;
+}
+
+div.equipe-site {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+   
+}
+
+
+img.foto-equipe{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+
+div.apresentacao > p{
+    font-size: 1.32rem;
+    margin: 30px 0 30px 0;
+   
+}
+
+
+ .links-equipe {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.redes-equipe{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+.links-equipe > #github {
+    height: 3rem;
+    width: 3rem;
+    color: var(--cor3);
+}
+#github i {
+    font-size: 3rem;
+}
+.links-equipe .redes-equipe {
+    height: 3rem;
+    width: 3rem;
+    color: var(--cor0);
+    background-color: var(--cor3);
+    border-radius: 50%;
+   
+}
+.links-equipe .redes-equipe i{
+    font-size: 2rem;
+} 
+
+
+.apresentacao .links-equipe {
+    margin-bottom: 100px;
+}
+
+.equipe-revista {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content:space-between;
+}
+
+.apresentacao > p.cargo {
+    font-size: 1.32rem;
+    letter-spacing: 0.12rem;
+    margin: 15px 0 15px 0;
+}
 /*interação*/
 
 
@@ -193,7 +275,9 @@ p.interacao {
 }
 
 .main-link{
-   display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -203,9 +287,8 @@ p.interacao {
     color: var(--cor0);
     background-color: var(--cor2);
     border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
 }
 #main-redes-sociais .main-link i {
     font-size: 1.45rem;
