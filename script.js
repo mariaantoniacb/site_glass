@@ -1,19 +1,3 @@
-// Menu hamburguer
-
-// function clickMenu(){
-//     var menu = document.getElementById('menu')
-//     menu.style.display = 'block'
-//     if(menu.style.display == 'block' ){
-//         menu.style.display = 'none'
-//     }else {
-//         menu.style.display = 'block'
-//     }
-// }
-
-
-
-
-
 
 
 //  pag inicial - seção "Designers para ficar de olho"
