@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
  *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
     text-decoration: none;
     font-family: "poppins", sans-serif;
     }
@@ -85,8 +83,6 @@ p.media-username{
     gap: 20px;
 
 }
-
-    
 
 .img-capa{
     border: 1px solid var(--cor1);

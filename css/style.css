@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('../estilo/article.css');
-@import url('../estilo/lancamentos.css');
+@import url('../css/article.css');
+@import url('../css/lancamentos.css');
 
 
 *{
@@ -44,7 +44,7 @@ header > p {
     font-style: normal
 }
 
-.centralizar {
+.header-logo {
     text-align: center;
     margin-top: -50px; 
 }
@@ -58,32 +58,30 @@ header > div > a > img {
 
 
 .menu-nav {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    white-space: nowrap;
-}
-
-.nav {
     width: 100%;
     max-width: 950px; 
-    display: flex;
+    margin: 0 auto;
+    display: flex; 
     justify-content: space-between;
+
     border-top: 1px solid var(--cor1);
     border-bottom: 1px solid var(--cor1);
     overflow-x: auto;
+    
 }
 
-.nav::-webkit-scrollbar {
+.menu-nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    padding: 6px 10px;
+} 
+
+
+.menu-nav::-webkit-scrollbar {
   display: none;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #111;
-  font-size: 15px;
-  padding: 6px 10px;
-}
 
 
 /*main*/
@@ -97,6 +95,8 @@ main.container {
     flex-direction: column;
   
 }
+ 
+/*Destaques*/
 
 .destaques {
     max-width: 900px;
@@ -208,7 +208,7 @@ div.shadow{
 }
 
 
-
+/* Lançamentos */
 
 fieldset {
     
@@ -221,14 +221,12 @@ fieldset {
     margin: 30px auto 0;
     padding: 0;
 
-    max-width: 100%;
-
-    
+    max-width: 100%; 
 }
 
 fieldset legend {
     padding: 0px 1.5rem;
-    font-size: clmap(1rem, 4vw, 1.3rem);
+    font-size: clamp(1rem, 4vw, 1.3rem);
     font-weight: 300;
     letter-spacing: 0.3rem;
 }
@@ -274,7 +272,7 @@ section.lancamentos{
     text-decoration: underline;
 } 
 
-
+/* Designers*/
 
 section.designers {
     max-width: 800px;
@@ -282,8 +280,7 @@ section.designers {
     margin: 40px auto;
     padding: 0 1rem;
     position: relative;
-    /* display: flex;
-    justify-content: center; */
+   
 } 
 
 .button-scroll {
@@ -369,7 +366,7 @@ img.img-desi-card{
 }
 
 
-/*footer*/
+/* Footer*/
 footer {
     width: 100%;
     color: var(--cor2-2);
@@ -385,12 +382,12 @@ footer {
 }
 
 
-#footer-incricao {
+#footer-inscricao {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: var(--cor2-2);
-}
+    
+} 
 #input-group {
     display: flex;
     align-items: center;
