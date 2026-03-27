@@ -6,7 +6,12 @@ const container = document.getElementById("designersCards");
 const btnLeft = document.querySelector(".button-scroll.left");
 const btnRight = document.querySelector(".button-scroll.right");
 
-container.innerHTML += container.innerHTML;
+const cards = document.querySelectorAll(".desi-card");
+
+cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    container.appendChild(clone);
+});
 
 let scrollSpeed = 0.5;
 let position = 0;
