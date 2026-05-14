@@ -127,19 +127,26 @@ form#form-fale-conosco{
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    color: var(--cor3);
-
-    
+    color: var(--cor3); 
 }
 
+form#form-fale-conosco > p{
+    margin-top: 20px;
+}
+
+#error{
+    color: red;
+    text-transform: none;
+    font-size: 0.8rem;
+}
 .fale-conosco, textarea {
     width: 500px;
     display: block;
     margin: 0 auto;
     border: none;
-    margin: 20px 0px;
+    margin-top: 20px;
     height: 50px;
-    padding: 5px; 
+    padding: 10px; 
 
     
 }
@@ -157,7 +164,7 @@ button#botao-enviar {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: 200px;
+    margin:20px 0 200px 0;
 }
 
 button#botao-enviar:hover {
