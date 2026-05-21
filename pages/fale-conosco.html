@@ -41,26 +41,26 @@
         <form id="form-fale-conosco" action="" method="post">
 
 
-            <p>
+            <div class="box-info">
                 <label class="label-fale-conosco" for="inome">Nome</label>
                 <input class="fale-conosco" type="text" name="nome" id="inome"
                     placeholder="digite seu nome e sobrenome">
-                  <span id="error"></span>      
-            </p>
-         
-           
+                  <span class="msg-erro"><i class="fa-solid fa-circle-exclamation"></i>Por favor, digite seu nome e sobrenome!</span>      
+            </div>
             
-            <p>
+            <div class="box-info">
                 <label class="label-fale-conosco" for="iemail">E-mail</label>
                 <input class="fale-conosco" type="email" name="email" id="iemail" autocomplete="email"
                     placeholder="digite seu e-mail">
-                   
-            </p>
+                <span class="msg-erro"><i class="fa-solid fa-circle-exclamation"></i>Por favor, preencha o seu email corretamente!</span>
+            </div>
 
-            <p>
+            <div class="box-info">
                 <label class="label-fale-conosco" for="imsg">Mensagem: </label> <br>
                 <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-            </p>
+                <span class="msg-erro"><i class="fa-solid fa-circle-exclamation"></i>Atenção, o campo de mensagem está vazio!</span>
+
+            </div>
             <button id="botao-enviar" type="submit">Enviar mensagem</button>
         </form>
 

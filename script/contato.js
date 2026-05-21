@@ -3,28 +3,46 @@ const nome = document.querySelector('#inome')
 const email = document.querySelector('#iemail')
 const assunto = document.querySelector('#iassunto')
 const mensagem = document.querySelector('#imsg')
+const msgErro = document.querySelectorAll('.msg-erro')
 
 
+function setError(index){
+    msgErro[index].style.display = 'block';
+}
+
+function removeError(index){
+    msgErro[index].style.display = 'none';
+}
 
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if(nome.value.trim() === ""){
-       alert('Atenção, preencha o seu nome!') 
-      
-        return;
+    
+
+    if(nome.value.trim() == "" || (nome.value.length < 3) ){
+       
+       setError(0)
+        return
+    }else{
+        removeError(0)
     }
 
-    if(email.value === "" || !isEmailValid(email.value)){
-       alert('Atenção, preencha o seu email corretamente!')
-        return;
+    if(email.value === "" && !isEmailValid(email.value)){
+      
+       setError(1)
+        return
+    }else{
+        removeError(1)
     }
 
 
     if(mensagem.value.trim() === ""){
-        alert('Atenção, campo vazio!')
+        
+        setError(2)
         return;
+    }else{
+        removeError(2)
     }
     
 form.submit()

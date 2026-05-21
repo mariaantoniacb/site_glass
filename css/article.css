@@ -130,14 +130,15 @@ form#form-fale-conosco{
     color: var(--cor3); 
 }
 
-form#form-fale-conosco > p{
+form#form-fale-conosco > div{
     margin-top: 20px;
 }
 
-#error{
+.msg-erro{
     color: red;
     text-transform: none;
     font-size: 0.8rem;
+    display: none;
 }
 .fale-conosco, textarea {
     width: 500px;
